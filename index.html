@@ -6,78 +6,121 @@
   <title>Abhinay Kumar Goud K | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="page-shell">
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="ambient ambient-c"></div>
+
     <header class="site-header">
       <nav class="nav container">
-        <a class="brand" href="#home">Abhinay Kumar Goud K</a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <a class="brand" href="#home">
+          <span>Abhinay Kumar</span>
+          <strong>Goud K</strong>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
           <span></span>
           <span></span>
           <span></span>
         </button>
+
         <div class="nav-links" id="nav-links">
           <a href="#home">Home</a>
           <a href="#projects">Projects</a>
+          <a href="#socials">Socials</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>
+
+        <button class="theme-toggle" type="button" aria-label="Toggle glow theme" title="Toggle glow theme">
+          <span class="theme-toggle__orb"></span>
+        </button>
       </nav>
     </header>
 
     <main>
       <section class="hero section" id="home">
         <div class="container hero-grid">
-          <div class="hero-copy" data-reveal>
+          <div class="hero-copy" data-reveal="up">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              [INTERN] AT EVOLVEX
+            </p>
+
             <h1>
               Hi, I'm <span>Abhinay</span><br>
               <span>Kumar Goud K</span>
             </h1>
-            <p class="hero-role">[Intern] at EvolveX</p>
+
             <p class="hero-text">
-              I'm an engineering student at CMR institute of technology with a strong interest in creative content and grow my analytics.
-              I'm driven by solving real-world problems, creativity, innovation, and I enjoy working on startup
-              ideas and real world problems. My goal is to build a professional portfolio and secure a full time offer.
+              I'm an engineering student at CMR Institute of Technology with a strong interest in creative content,
+              analytics, and real-world problem solving. I enjoy building startup-minded ideas, exploring innovation,
+              and growing into a professional who can turn curiosity into meaningful products.
             </p>
-            <div class="hero-actions">
+
+            <div class="hero-actions" data-reveal="up">
               <a class="btn btn-primary" href="#projects">View My Work</a>
               <a class="btn btn-secondary" href="#contact">Get In Touch</a>
             </div>
+
+            <div class="hero-metrics" data-reveal="up">
+              <article class="metric-card">
+                <strong>01+</strong>
+                <span>Internship journey in progress</span>
+              </article>
+              <article class="metric-card">
+                <strong>03</strong>
+                <span>Core focus areas: design, content, analytics</span>
+              </article>
+            </div>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
-            <div class="portrait-frame" data-reveal>
-              <div class="portrait-ring">
+          <div class="hero-visual" data-reveal="zoom">
+            <div class="visual-orbit orbit-one"></div>
+            <div class="visual-orbit orbit-two"></div>
+
+            <div class="portrait-stage">
+              <div class="portrait-glow"></div>
+              <div class="portrait-frame">
                 <img class="portrait-image" src="./profile.jpeg" alt="Portrait of Abhinay Kumar Goud K">
               </div>
             </div>
-            <div class="floating floating-bolt">âš¡</div>
-            <div class="floating floating-rocket">ðŸš€</div>
-            <div class="floating floating-bulb">ðŸ’¡</div>
+
+            <div class="floating-card floating-card-top">
+              <span>&#9889;</span>
+            </div>
+            <div class="floating-card floating-card-right">
+              <span>&#128640;</span>
+            </div>
+            <div class="floating-card floating-card-bottom">
+              <span>&#128161;</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section projects-section" id="projects">
+      <section class="section" id="projects">
         <div class="container">
-          <div class="section-heading" data-reveal>
-            <h2>Featured Projects</h2>
-            <span></span>
+          <div class="section-heading" data-reveal="up">
+            <p class="section-kicker">Featured Work</p>
+            <h2>Projects with a sharper visual story</h2>
+            <p>Highlighted work, presented in a cleaner product-card style that matches the hero.</p>
           </div>
 
           <div class="projects-grid">
-            <article class="project-card" data-reveal>
-              <div class="project-art">
-                <span>ðŸš€</span>
-              </div>
-              <div class="project-body">
+            <article class="project-card" data-reveal="up">
+              <div class="project-card__glow"></div>
+              <div class="project-card__icon">&#129302;</div>
+              <div class="project-card__content">
+                <p class="card-label">AI Product</p>
                 <h3>Career Analyser AI</h3>
                 <p>
-                  It gives the analysis of your technical and communication skills and suggests the improvements
-                  to be done and provides a roadmap based on your resume, github and linkedin profiles.
+                  Analyses technical and communication skills, then suggests improvements and a roadmap using resume,
+                  GitHub, and LinkedIn signals.
                 </p>
                 <div class="chip-row">
                   <span class="chip">Front-End</span>
@@ -86,60 +129,77 @@
                 </div>
               </div>
             </article>
+
+            <article class="project-card" data-reveal="up">
+              <div class="project-card__glow"></div>
+              <div class="project-card__icon">&#128200;</div>
+              <div class="project-card__content">
+                <p class="card-label">Growth Mindset</p>
+                <h3>Analytics-Led Problem Solving</h3>
+                <p>
+                  A portfolio direction focused on creative execution, measurable improvement, and ideas that can scale
+                  into products or communities.
+                </p>
+                <div class="chip-row">
+                  <span class="chip">Analytics</span>
+                  <span class="chip">Strategy</span>
+                  <span class="chip">Execution</span>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section social-section" id="social-media">
+      <section class="section" id="socials">
         <div class="container">
-          <div class="section-heading" data-reveal>
-            <h2>Social Media</h2>
-            <span></span>
+          <div class="section-heading" data-reveal="up">
+            <p class="section-kicker">Social Presence</p>
+            <h2>Community-first platforms with bold presentation</h2>
+            <p>Each social block now feels more like a premium campaign panel than a plain content card.</p>
           </div>
 
           <div class="social-grid">
-            <article class="social-card social-card-instagram" data-reveal>
-              <div class="social-art">
-                <div class="social-badge social-badge-message">Message</div>
-                <div class="social-badge social-badge-mail"></div>
-                <div class="social-badge social-badge-code">&lt;/&gt;</div>
-                <div class="social-badge social-badge-send">Send Message</div>
-                <div class="social-figure social-figure-instagram"></div>
+            <article class="social-card" data-reveal="left">
+              <div class="social-card__visual social-card__visual--instagram">
+                <span class="social-pill">Content Creation</span>
+                <div class="social-card__shape social-card__shape--one"></div>
+                <div class="social-card__shape social-card__shape--two"></div>
+                <div class="social-card__icon">&#128172;</div>
               </div>
-              <div class="social-body">
-                <h3>Instagram community</h3>
+              <div class="social-card__body">
+                <p class="card-label">Instagram Community</p>
+                <h3>Transforming books into trends</h3>
                 <p>
-                  "Transforming Books into Trends" by building a learning-driven Instagram community where students
-                  explore arithmetic and reasoning through simple, engaging content.
+                  Building a learning-driven page where students explore arithmetic and reasoning through simple,
+                  engaging visual content.
                 </p>
-                <div class="chip-row social-chip-row">
-                  <span class="chip social-chip">Canva Tool</span>
-                  <span class="chip social-chip">English &amp; Telugu</span>
-                  <span class="chip social-chip">Content Creation</span>
-                  <span class="chip social-chip">Education</span>
+                <div class="chip-row">
+                  <span class="chip">Canva</span>
+                  <span class="chip">English &amp; Telugu</span>
+                  <span class="chip">Education</span>
                 </div>
               </div>
             </article>
 
-            <article class="social-card social-card-facebook" data-reveal>
-              <div class="social-art">
-                <div class="social-bubble social-bubble-globe"></div>
-                <div class="social-bubble social-bubble-idea"></div>
-                <div class="social-bubble social-bubble-play"></div>
-                <div class="social-bubble social-bubble-gear"></div>
-                <div class="social-figure social-figure-facebook"></div>
+            <article class="social-card" data-reveal="right">
+              <div class="social-card__visual social-card__visual--facebook">
+                <span class="social-pill">Community Building</span>
+                <div class="social-card__shape social-card__shape--three"></div>
+                <div class="social-card__shape social-card__shape--four"></div>
+                <div class="social-card__icon">&#127760;</div>
               </div>
-              <div class="social-body">
-                <h3>Facebook Community</h3>
+              <div class="social-card__body">
+                <p class="card-label">Facebook Community</p>
+                <h3>Daily educational engagement</h3>
                 <p>
-                  Building an engaging educational community on Facebook with daily content, interactive learning
-                  sessions, and accessible explanations for students growing in arithmetic and reasoning.
+                  Growing an accessible student community with consistent posts, interaction, and friendly arithmetic
+                  and reasoning guidance.
                 </p>
-                <div class="chip-row social-chip-row">
-                  <span class="chip social-chip">Facebook</span>
-                  <span class="chip social-chip">Community Building</span>
-                  <span class="chip social-chip">Educational Content</span>
-                  <span class="chip social-chip">Student Engagement</span>
+                <div class="chip-row">
+                  <span class="chip">Facebook</span>
+                  <span class="chip">Daily Posts</span>
+                  <span class="chip">Student Growth</span>
                 </div>
               </div>
             </article>
@@ -147,95 +207,116 @@
         </div>
       </section>
 
-      <section class="section skills-section" id="skills">
+      <section class="section" id="skills">
         <div class="container">
-          <div class="section-heading" data-reveal>
-            <h2>Skills &amp; Learning</h2>
-            <span></span>
+          <div class="section-heading" data-reveal="up">
+            <p class="section-kicker">Skills &amp; Learning</p>
+            <h2>Core strengths, interests, and current momentum</h2>
+            <p>A more modern dashboard layout keeps the section readable while feeling aligned with the new aesthetic.</p>
           </div>
 
           <div class="skills-grid">
-            <article class="skill-card" data-reveal>
-              <h3>âš¡ Technical Skills</h3>
+            <article class="skill-card" data-reveal="up">
+              <p class="card-label">Technical Skills</p>
+              <h3>Hands-on development stack</h3>
+
               <div class="skill-line">
-                <span>Python</span>
+                <div class="skill-line__meta">
+                  <span>Python</span>
+                  <strong>72%</strong>
+                </div>
                 <div class="progress"><i style="width: 72%"></i></div>
               </div>
+
               <div class="skill-line">
-                <span>HTML,CSS,JS/Frontend</span>
+                <div class="skill-line__meta">
+                  <span>HTML, CSS, JS / Frontend</span>
+                  <strong>86%</strong>
+                </div>
                 <div class="progress"><i style="width: 86%"></i></div>
               </div>
+
               <div class="skill-line">
-                <span>MySQL,MongoDB/Database</span>
+                <div class="skill-line__meta">
+                  <span>MySQL, MongoDB / Database</span>
+                  <strong>61%</strong>
+                </div>
                 <div class="progress"><i style="width: 61%"></i></div>
               </div>
             </article>
 
-            <article class="skill-card" data-reveal>
-              <h3>ðŸŽ¯ Interests</h3>
+            <article class="skill-card" data-reveal="up">
+              <p class="card-label">Interests</p>
+              <h3>What keeps me energized</h3>
               <ul class="plain-list">
-                <li>Product Design</li>
-                <li>Data Analysis</li>
-                <li>Empath/Leadership</li>
-                <li>Speaker</li>
+                <li>Product design and interface thinking</li>
+                <li>Data analysis and insight-driven decisions</li>
+                <li>Empathy, leadership, and collaboration</li>
+                <li>Public speaking and clear communication</li>
               </ul>
             </article>
 
-            <article class="skill-card" data-reveal>
-              <h3>ðŸ“š Currently Learning</h3>
-              <ul class="plain-list roomy">
-                <li>Learning - Data structures through python</li>
-                <li>Learning - New Framework</li>
-                <li>Learning - Leadership/Communication</li>
+            <article class="skill-card" data-reveal="up">
+              <p class="card-label">Currently Learning</p>
+              <h3>Where I am investing time right now</h3>
+              <ul class="plain-list">
+                <li>Data structures through Python</li>
+                <li>New frameworks and faster frontend workflows</li>
+                <li>Leadership and communication for teams</li>
+                <li>Better product storytelling and presentation</li>
               </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section contact-section" id="contact">
+      <section class="section" id="contact">
         <div class="container">
-          <div class="section-heading" data-reveal>
-            <h2>Let's Connect</h2>
-            <span></span>
+          <div class="section-heading" data-reveal="up">
+            <p class="section-kicker">Contact</p>
+            <h2>Ready to collaborate, build, or just connect</h2>
+            <p>The contact area now matches the rest of the experience with cleaner cards and a stronger glass panel form.</p>
           </div>
 
           <div class="contact-grid">
-            <div class="contact-cards">
-              <article class="contact-card" data-reveal>
-                <div class="contact-icon">âœ‰ï¸</div>
+            <div class="contact-stack">
+              <article class="contact-card" data-reveal="left">
+                <div class="contact-icon">&#9993;</div>
                 <div>
-                  <h3>Email</h3>
-                  <p>abhinaykalal019@gmail.com</p>
+                  <p class="card-label">Email</p>
+                  <h3>abhinaykalal019@gmail.com</h3>
                 </div>
               </article>
 
-              <article class="contact-card" data-reveal>
-                <div class="contact-icon">ðŸ’¼</div>
+              <article class="contact-card" data-reveal="left">
+                <div class="contact-icon">&#128188;</div>
                 <div>
-                  <h3>LinkedIn</h3>
-                  <p>linkedin.com/in/abhinaykumargoud</p>
+                  <p class="card-label">LinkedIn</p>
+                  <h3>linkedin.com/in/abhinaykumargoud</h3>
                 </div>
               </article>
 
-              <article class="contact-card" data-reveal>
-                <div class="contact-icon">ðŸ“±</div>
+              <article class="contact-card" data-reveal="left">
+                <div class="contact-icon">&#128241;</div>
                 <div>
-                  <h3>Instagram</h3>
-                  <p>@abhi.aptitude</p>
+                  <p class="card-label">Instagram</p>
+                  <h3>@abhi.aptitude</h3>
                 </div>
               </article>
 
-              <article class="contact-card" data-reveal>
-                <div class="contact-icon">ðŸ“</div>
+              <article class="contact-card" data-reveal="left">
+                <div class="contact-icon">&#128205;</div>
                 <div>
-                  <h3>Location</h3>
-                  <p>Hyderabad , India</p>
+                  <p class="card-label">Location</p>
+                  <h3>Hyderabad, India</h3>
                 </div>
               </article>
             </div>
 
-            <form class="contact-form" data-reveal>
+            <form class="contact-form" data-reveal="right">
+              <p class="card-label">Send a Message</p>
+              <h3>Let's build something thoughtful</h3>
+
               <label for="name">Name</label>
               <input id="name" name="name" type="text" placeholder="Your name">
 
@@ -255,12 +336,20 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <div class="footer-icons">
-          <a href="#projects" aria-label="Projects">ðŸ’¼</a>
-          <a href="#home" aria-label="Home"></a>
-          <a href="#contact" aria-label="Contact">âœ‰ï¸</a>
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#home">
+            <span>Abhinay Kumar</span>
+            <strong>Goud K</strong>
+          </a>
+          <p>Built as a more cinematic one-page portfolio with motion, glow, and stronger section storytelling.</p>
         </div>
-        <p>&copy; 2026 Abhinay Kumar Goud K. Built with ðŸ’œ and AI assistance.</p>
+
+        <div class="footer-links">
+          <a href="#projects">Projects</a>
+          <a href="#socials">Socials</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </footer>
   </div>
